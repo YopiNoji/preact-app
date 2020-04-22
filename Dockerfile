@@ -8,6 +8,8 @@ RUN \
 
 RUN apk add git
 
+RUN git config --global user.email "yopinoji@yahoo.co.jp"
+
 WORKDIR /usr/src
 RUN npm install && npm cache clean --force
 CMD ["/bin/sh"]
